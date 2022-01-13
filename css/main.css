@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --my-black: #0a1612;
+    --my-white: white;
+    --my-grey: #c6c1c0;
+    --my-yellow: #f7ce3e;
+    --my-blue: #1a2931;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--my-white);
+}
+
+
+.bg{
+    background-color: var(--my-blue);
+}
+
+
+.top header {
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: var(--my-blue);
+}
+
+a{
+    color: var(--my-white);
+    text-decoration: none;
+}
+
+.left{
+    display: flex;
+}
+
+.menu .left div{
+    margin-right: 3em;
+    font-size: 0.9em;
+}
+
+.menu{
+    background-color: var(--my-yellow);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.menu-link{
+    height: 1em;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+
+.bio{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+            "image content";
+}
+
+.bio .content{
+    padding: 1em 2em;
+}
+
+.bio .content h2{
+    font-size: 3em;
+    color: var(--my-grey);
+}
+
+.bio img{
+    width: 100%;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.work{
+    background-color: var(--my-grey);
+    color: var(--my-blue);
+}
+
+.work .work-title{
+    text-align: center;
+    padding-top: 3em;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.work-title h2{
+    border: 0;
+    margin: 0;
+    color: var(--my-blue);
+}
+
+.work .jobs{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2em 10em;
+}
+
+.job{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1em;
+    padding-left:2em;
+}
+
+.work-dates{
+    padding-left: 5em;
+}
+
+
+.education-title{
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 3em;
+}
+
+.quals{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2em 10em;
+}
+
+.qual{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.qual-description ul{
+    list-style-type: none;
+}
+
+.scl-dates{
+    padding-left: 5em;
+}
+
+.projects{
+    background-color: var(--my-grey);
+    color: var(--my-blue);
+}
+
+.projects-title{
+    text-align: center;
+    margin: 2em;
+    font-size: 1.5em;
+    padding-top: 3em;
+}
+
+.project-table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1em;
+    padding-bottom: 10em;
+} 
+
+.project h3{
+    font-size: 2;
+}
+
+.project{
+    padding: 0 15em;
+}
+
+.project a{
+    color: var(--my-blue);
+}
+
+
+
+
